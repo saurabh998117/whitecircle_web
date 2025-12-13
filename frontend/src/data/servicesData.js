@@ -1,410 +1,388 @@
-export const servicesDetails = {
-
-  "it-services": {
-    title: "IT Services",
-    overview:
-      "We provide strategic and operational IT services to ensure secure, scalable, and efficient technology infrastructure for modern enterprises. Our solutions enable organizations to optimize operations, reduce downtime, and maintain compliance with global IT standards.",
-    deliverables: [
-      "IT Infrastructure Management",
-      "Network and Server Administration",
-      "Remote Monitoring and Support",
-      "Cybersecurity and Compliance Management",
-      "Backup and Disaster Recovery Services"
-    ],
-    process: [
-      "Requirement Assessment and IT Audit",
-      "Strategy and Architecture Planning",
-      "Implementation and Configuration",
-      "Monitoring, Support and Continuous Optimization"
-    ],
-    technologies: [
-      "Windows / Linux Servers",
-      "Virtualization (VMware, Hyper-V)",
-      "Cloud Platforms (AWS, Azure, Google Cloud)",
-      "Monitoring Tools (Zabbix, Grafana, Prometheus)"
-    ]
-  },
-
-  "salesforce-services": {
-    title: "Salesforce Services",
-    overview:
-      "We offer Salesforce development, customization, and integration services to help enterprises fully leverage the capabilities of Salesforce CRM. Our team enables organizations to automate business processes and enhance customer experience through secure, scalable CRM implementations.",
-    deliverables: [
-      "Salesforce Consulting and Implementation",
-      "Custom Workflow, Objects, and Automation Development",
-      "Apex, Visualforce, and Lightning Web Components (LWC)",
-      "Third-Party CRM Integrations"
-    ],
-    process: [
-      "CRM Requirement Analysis and Business Mapping",
-      "Solution Design and Salesforce Configuration",
-      "Custom Development and API Integration",
-      "Testing, Deployment and User Onboarding"
-    ],
-    technologies: [
-      "Salesforce Cloud (Sales, Service, Marketing)",
-      "Apex, Visualforce, Lightning Web Components (LWC)",
-      "REST/SOAP APIs and Integration Tools",
-      "MuleSoft, Boomi, and Zapier"
-    ]
-  },
-
+export const servicesData = {
   "web-development": {
     title: "Web Development",
+    bannerTitle: "Scalable & Modern Web Development",
+    bannerSubtitle: "High-performance web applications tailored for growth.",
     overview:
-      "Our enterprise web development solutions ensure secure, high-performance, and scalable applications tailored to business needs. We develop front-end, back-end, and full-stack applications designed for seamless digital transformation.",
+      "We build secure, scalable, and high-performing web applications using modern technologies. From startups to enterprises, our solutions are designed for long-term success.",
+
     deliverables: [
-      "Responsive Web Applications",
-      "Custom Enterprise Portals",
-      "API Development and System Integrations",
-      "Maintenance and Performance Optimization"
+      "Custom website & web app development",
+      "Responsive UI/UX design",
+      "Backend & API development",
+      "Performance optimization",
+      "Deployment & maintenance"
     ],
+
     process: [
-      "Business Requirement Analysis and Wireframing",
-      "UI/UX Design and Architecture Planning",
-      "Development and Integration",
-      "Security Testing, Deployment and Maintenance"
+      "Requirement analysis & planning",
+      "UI/UX wireframing",
+      "Frontend & backend development",
+      "Testing & quality assurance",
+      "Deployment & ongoing support"
     ],
+
     technologies: [
-      "React, Angular, Vue.js",
-      "Node.js, Java, .NET, Python",
-      "SQL/NoSQL Databases",
-      "AWS, Azure, Docker, Kubernetes"
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "PostgreSQL"
     ]
   },
 
-  "mobile-app-development": {
+  "mobile": {
     title: "Mobile App Development",
+    bannerTitle: "High-Performance Mobile Apps",
+    bannerSubtitle: "Android & iOS apps built for scalability.",
     overview:
-      "We design and develop secure, performance-driven mobile applications for Android and iOS platforms. Our solutions are engineered to deliver seamless user interaction, enterprise scalability, and optimal device performance.",
+      "We design and develop robust mobile applications with seamless user experiences, optimized performance, and strong security.",
+
     deliverables: [
-      "Native and Cross-Platform Mobile Applications",
-      "UI/UX Design and Prototyping",
-      "App Store Deployment and Monitoring",
-      "Mobile-Backend and API Integration"
+      "Android & iOS app development",
+      "Cross-platform solutions",
+      "UI/UX design",
+      "API integration",
+      "App store deployment"
     ],
+
     process: [
-      "User Research and Requirement Definition",
-      "Prototype and Architecture Design",
-      "Development and Integration",
-      "Quality Assurance, Deployment and Support"
+      "Idea validation",
+      "Wireframes & prototypes",
+      "App development",
+      "Testing & QA",
+      "Launch & maintenance"
     ],
+
     technologies: [
-      "Kotlin, Swift, Java",
-      "Flutter, React Native",
-      "Firebase, Realm, SQLite",
-      "REST / GraphQL APIs"
+      "React Native",
+      "Flutter",
+      "Swift",
+      "Kotlin",
+      "Firebase"
     ]
   },
 
-  "digital-marketing": {
-    title: "Digital Marketing Services",
+  "shopify": {
+    title: "Shopify & WordPress",
+    bannerTitle: "E-commerce & CMS Solutions",
+    bannerSubtitle: "Powerful online stores & content platforms.",
     overview:
-      "We deliver data-driven digital marketing solutions that enhance brand visibility, user acquisition, and ROI-driven business outcomes. Our strategies are built on analytics, user behavior, and targeted engagement models.",
+      "We build scalable e-commerce stores and CMS platforms using Shopify and WordPress, tailored to business needs.",
+
     deliverables: [
-      "SEO, SEM and SMM Campaigns",
-      "Lead Generation and Performance Marketing",
-      "Content and Brand Strategy",
-      "Analytics and Conversion Optimization"
+      "Custom Shopify stores",
+      "WordPress website development",
+      "Theme customization",
+      "Payment gateway integration",
+      "SEO optimization"
     ],
+
     process: [
-      "Market and Competitor Analysis",
-      "Campaign Planning and Content Creation",
-      "Execution and Cross-Channel Optimization",
-      "Performance Monitoring and Reporting"
+      "Requirement gathering",
+      "Theme design",
+      "Development & customization",
+      "Testing",
+      "Launch & support"
     ],
+
     technologies: [
-      "Google Analytics, Search Console",
-      "Meta Ads, LinkedIn Ads, Google Ads",
-      "HubSpot, Mailchimp, SEMrush, Ahrefs"
+      "Shopify",
+      "WordPress",
+      "WooCommerce",
+      "Liquid",
+      "PHP"
     ]
   },
 
-  "software-development": {
-    title: "Software Development",
+  "database": {
+    title: "Database Design",
+    bannerTitle: "Secure & Optimized Database Systems",
+    bannerSubtitle: "Data architecture built for performance.",
     overview:
-      "We specialize in building scalable, secure, and maintainable software tailored to industry-specific requirements. Our solutions support enterprise automation, workflow management, and large-scale business operations.",
+      "We design reliable, scalable, and secure database systems that ensure optimal performance and data integrity.",
+
     deliverables: [
-      "Custom Enterprise Software Development",
-      "Microservices and Modular Architecture",
-      "API Development and Integration",
-      "Quality Assurance and Maintenance"
+      "Database architecture design",
+      "Data migration",
+      "Performance optimization",
+      "Security & backups"
     ],
+
     process: [
-      "Requirement Gathering and System Analysis",
-      "Architecture Planning and Prototyping",
-      "Software Development and Integration",
-      "Testing, Deployment and Lifecycle Support"
+      "Requirement analysis",
+      "Schema design",
+      "Implementation",
+      "Testing",
+      "Monitoring & optimization"
     ],
+
     technologies: [
-      "Java, .NET, Python, Node.js",
-      "Angular, React, Vue.js",
-      "PostgreSQL, MySQL, MongoDB",
-      "Docker, Kubernetes, CI/CD Pipelines"
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis"
     ]
   },
 
-  "analytics": {
-    title: "Analytics",
+  "ai": {
+    title: "AI & Machine Learning",
+    bannerTitle: "AI-Powered Business Solutions",
+    bannerSubtitle: "Smart automation & predictive insights.",
     overview:
-      "Our analytics solutions empower enterprises to extract actionable intelligence from complex datasets. We deliver predictive, prescriptive, and real-time analytics to improve organizational decision-making.",
-    deliverables: [
-      "Business Intelligence Dashboards",
-      "Predictive Analytics and Modelling",
-      "Data Visualization and Reporting",
-      "Data Warehousing and ETL Solutions"
-    ],
-    process: [
-      "Data Assessment and Requirement Mapping",
-      "Data Modeling and System Integration",
-      "BI Implementation and Automation",
-      "Insight Reporting and Optimization"
-    ],
-    technologies: [
-      "Power BI, Tableau, Qlik",
-      "Python, R, MATLAB",
-      "Snowflake, Redshift, BigQuery",
-      "Apache Hadoop, Spark, Kafka"
-    ]
-  },
+      "We create AI-driven solutions that automate processes, improve decision-making, and unlock business intelligence.",
 
-  "industrial-automation": {
-    title: "Industrial Automation",
-    overview:
-      "We provide advanced automation solutions enabling smart manufacturing, optimized supply chains, and real-time operational efficiency. Our automation systems enhance productivity and ensure consistent quality in industrial environments.",
     deliverables: [
-      "PLC, SCADA and HMI Solutions",
-      "Robotics and Motion Control Systems",
-      "Industrial IoT Integration",
-      "Predictive Maintenance Solutions"
+      "Predictive analytics",
+      "AI automation",
+      "Chatbots",
+      "Recommendation systems"
     ],
+
     process: [
-      "Industrial Requirement Study and Feasibility",
-      "System Architecture and Control Design",
-      "Deployment and Monitoring Setup",
-      "On-site Support and Optimization"
+      "Data analysis",
+      "Model development",
+      "Training & validation",
+      "Deployment",
+      "Continuous improvement"
     ],
+
     technologies: [
-      "Siemens, Allen-Bradley, Mitsubishi PLCs",
-      "SCADA / HMI Tools",
-      "IIoT Platforms and Edge Gateways",
-      "Sensors, Motion Controllers, Robotics APIs"
+      "Python",
+      "TensorFlow",
+      "PyTorch",
+      "OpenAI APIs"
     ]
   },
 
   "iot": {
-    title: "Internet of Things (IoT)",
+    title: "IoT Solutions",
+    bannerTitle: "Smart IoT Ecosystems",
+    bannerSubtitle: "Connected devices with real-time insights.",
     overview:
-      "We design and implement secure IoT ecosystems that connect devices, sensors, and applications to enable intelligent operations across industries. Our IoT solutions accelerate automation and real-time decision-making.",
+      "We develop IoT systems that connect devices, collect real-time data, and enable smart decision-making.",
+
     deliverables: [
-      "IoT Platform Development",
-      "Device Connectivity and Protocols",
-      "Edge Computing and Sensor Integration",
-      "Monitoring Dashboards and Alerts"
+      "IoT architecture design",
+      "Device integration",
+      "Real-time dashboards",
+      "Cloud connectivity"
     ],
+
     process: [
-      "Use Case Identification and Planning",
-      "Hardware and Connectivity Setup",
-      "Platform Integration and Testing",
-      "Deployment, Analytics and Support"
+      "Use-case analysis",
+      "Device integration",
+      "Platform development",
+      "Testing",
+      "Deployment"
     ],
+
     technologies: [
-      "MQTT, CoAP, Modbus, OPC-UA",
-      "AWS IoT, Azure IoT Hub, Google IoT",
-      "ESP32, Raspberry Pi, Nordic Boards",
-      "Node-RED, Grafana, InfluxDB"
+      "AWS IoT",
+      "Azure IoT",
+      "MQTT",
+      "Node.js"
     ]
   },
 
-  "artificial-intelligence": {
-    title: "Artificial Intelligence (AI)",
+  "marketing": {
+    title: "Digital Marketing",
+    bannerTitle: "Growth-Focused Digital Marketing",
+    bannerSubtitle: "Increase visibility & conversions.",
     overview:
-      "We deliver AI-driven solutions that automate complex operations, enhance process accuracy, and enable data-centric decision-making. Our AI systems are designed to support business scalability with predictive intelligence.",
+      "We help businesses grow through strategic digital marketing campaigns.",
+
     deliverables: [
-      "Machine Learning & Deep Learning Models",
-      "NLP and Computer Vision Solutions",
-      "AI Automation and Chatbots",
-      "Model Deployment and MLOps"
+      "SEO optimization",
+      "Paid advertising",
+      "Content marketing",
+      "Brand strategy"
     ],
+
     process: [
-      "Business Use Case Identification",
-      "Dataset Engineering and Model Training",
-      "Model Deployment and Integration",
-      "Performance Monitoring and Optimization"
+      "Market research",
+      "Campaign planning",
+      "Execution",
+      "Optimization",
+      "Reporting"
     ],
+
     technologies: [
-      "TensorFlow, PyTorch, Scikit-Learn",
-      "OpenCV, NLP Libraries",
-      "AWS Sagemaker, Azure AI, Google Vertex AI",
-      "Apache Spark ML, Kubeflow"
+      "Google Ads",
+      "Facebook Ads",
+      "Google Analytics",
+      "SEMrush"
     ]
   },
 
-  "database-design": {
-    title: "Database Design",
+  "design": {
+    title: "Graphic Design",
+    bannerTitle: "Creative Graphic Design",
+    bannerSubtitle: "Designs that speak your brand.",
     overview:
-      "We provide robust database engineering solutions supporting high availability, secure transactions, and optimized data storage. Our database services ensure consistent performance for mission-critical enterprise workloads.",
+      "We create visually compelling designs that strengthen brand identity.",
+
     deliverables: [
-      "Database Architecture & ER Design",
-      "Structured and Unstructured Storage Solutions",
-      "Optimization, Backup and Recovery Planning",
-      "Performance Monitoring and Tuning"
+      "UI/UX design",
+      "Brand identity",
+      "Marketing creatives"
     ],
+
     process: [
-      "Requirement Analysis and Data Modeling",
-      "Schema Design and Architecture Setup",
-      "Implementation and Optimization",
-      "Backup, Replication and Maintenance"
+      "Concept creation",
+      "Design drafts",
+      "Feedback & revisions",
+      "Final delivery"
     ],
+
     technologies: [
-      "MySQL, PostgreSQL, MS SQL Server",
-      "MongoDB, Cassandra, Redis",
-      "Oracle, MariaDB",
-      "ETL and Data Replication Tools"
+      "Figma",
+      "Adobe Photoshop",
+      "Adobe Illustrator"
     ]
   },
 
-  "staffing-payroll": {
-    title: "Staffing & Payroll",
+  "video": {
+    title: "Animation & Video",
+    bannerTitle: "Engaging Animation & Video Content",
+    bannerSubtitle: "Tell your story visually.",
     overview:
-      "We provide end-to-end staffing, recruitment, and payroll management services enabling enterprises to streamline workforce operations with compliance and efficiency.",
+      "We produce high-quality animations and videos for marketing and education.",
+
     deliverables: [
-      "Permanent & Contract Staffing",
-      "HRMS and Payroll Outsourcing",
-      "Compliance and Statutory Management",
-      "Talent Screening and Assessment"
+      "Explainer videos",
+      "Motion graphics",
+      "Promotional videos"
     ],
+
     process: [
-      "Resource Demand Analysis",
-      "Talent Acquisition & Screening",
-      "Payroll and Compliance Setup",
-      "Monitoring and Performance Review"
+      "Script writing",
+      "Storyboarding",
+      "Animation",
+      "Final production"
     ],
+
     technologies: [
-      "SAP SuccessFactors, Oracle HCM",
-      "Zoho People, BambooHR, Workday",
-      "HRMS and Payroll Tools"
+      "After Effects",
+      "Premiere Pro",
+      "Blender"
     ]
   },
 
-  "software-testing": {
+  "cloud": {
+    title: "Cloud & Hosting",
+    bannerTitle: "Cloud Infrastructure & Hosting",
+    bannerSubtitle: "Secure, scalable & cost-efficient.",
+    overview:
+      "We design and manage cloud infrastructure for performance and security.",
+
+    deliverables: [
+      "Cloud migration",
+      "Server setup",
+      "DevOps automation",
+      "Monitoring & security"
+    ],
+
+    process: [
+      "Assessment",
+      "Migration planning",
+      "Deployment",
+      "Monitoring",
+      "Optimization"
+    ],
+
+    technologies: [
+      "AWS",
+      "Azure",
+      "Docker",
+      "Kubernetes"
+    ]
+  },
+
+  "testing": {
     title: "Software Testing",
+    bannerTitle: "Reliable Software Testing",
+    bannerSubtitle: "Quality assurance at every stage.",
     overview:
-      "We provide manual and automated software testing solutions ensuring reliability, security, and performance of enterprise systems. Our testing frameworks validate mission-critical applications with industry-standard methodologies.",
+      "We ensure software quality through comprehensive testing strategies.",
+
     deliverables: [
-      "Functional and Performance Testing",
-      "Automation Framework Development",
-      "Security and Vulnerability Assessment",
-      "User Acceptance and Regression Testing"
+      "Manual testing",
+      "Automation testing",
+      "Performance testing",
+      "Security testing"
     ],
+
     process: [
-      "Test Requirement and Strategy Definition",
-      "Test Case Development and Automation",
-      "Execution, Reporting and Defect Management",
-      "Continuous Quality Assurance"
+      "Test planning",
+      "Test execution",
+      "Bug reporting",
+      "Re-testing"
     ],
+
     technologies: [
-      "Selenium, Cypress, Playwright",
-      "JMeter, LoadRunner",
-      "OWASP Tools",
-      "Postman, SOAP UI"
+      "Selenium",
+      "Cypress",
+      "Jest",
+      "Postman"
     ]
   },
 
-  "payment-gateway": {
-    title: "Payment Gateway Service",
+  "salesforce": {
+    title: "Salesforce",
+    bannerTitle: "Salesforce CRM Solutions",
+    bannerSubtitle: "Customized CRM for business growth.",
     overview:
-      "We provide secure and scalable payment gateway integration for enterprises aiming to deliver seamless financial transactions with compliance to industry regulations.",
+      "We implement and customize Salesforce CRM to streamline business operations.",
+
     deliverables: [
-      "E-commerce and Banking Integrations",
-      "PCI DSS Compliant Payment Solutions",
-      "Multi-Currency and Wallet Integration",
-      "Fraud Detection and Monitoring"
+      "CRM setup",
+      "Custom workflows",
+      "Integration",
+      "Support & training"
     ],
+
     process: [
-      "Payment Requirement Analysis",
-      "Gateway Selection and API Integration",
-      "Security Implementation and Testing",
-      "Monitoring, Reporting and Compliance Support"
+      "Requirement analysis",
+      "Customization",
+      "Deployment",
+      "Training"
     ],
+
     technologies: [
-      "Razorpay, Stripe, PayPal",
-      "UPI, NetBanking APIs",
-      "PCI-DSS Security Standards",
-      "KYC/AML Compliance Systems"
+      "Salesforce",
+      "Apex",
+      "Lightning"
     ]
   },
 
-  "cloud-hosting": {
-    title: "Cloud & Hosting Service",
+  "fintech": {
+    title: "Fintech / Payment Gateways",
+    bannerTitle: "Secure Fintech Solutions",
+    bannerSubtitle: "Payments, wallets & financial platforms.",
     overview:
-      "Our cloud hosting solutions enable enterprises to scale operations with secure, high-availability deployments. We specialize in cloud migration, optimization and dedicated managed hosting services.",
-    deliverables: [
-      "Cloud Architecture Design & Migration",
-      "Hybrid and Multi-Cloud Solutions",
-      "DevOps and CI/CD Deployment",
-      "High Availability and Backup Services"
-    ],
-    process: [
-      "Workload Assessment & Planning",
-      "Architecture and Migration Execution",
-      "DevOps Automation and Deployment",
-      "Performance Monitoring and Support"
-    ],
-    technologies: [
-      "AWS, Azure, Google Cloud",
-      "Docker, Kubernetes, Terraform",
-      "Load Balancers, CDN, DNS, VPC",
-      "CI/CD (Jenkins, GitHub Actions)"
-    ]
-  },
+      "We develop secure fintech platforms and payment gateway integrations.",
 
-  "shopify-wordpress": {
-    title: "Shopify & WordPress Development",
-    overview:
-      "We deliver secure and conversion-centric e-commerce development using Shopify and WordPress platforms. Our solutions ensure optimized storefront performance and seamless customer experience.",
     deliverables: [
-      "Custom E-Commerce Store Development",
-      "Theme Customization and Plugin Development",
-      "Payment, Shipping and CRM Integrations",
-      "Store Optimization and Maintenance"
+      "Payment gateway integration",
+      "Wallet development",
+      "Fraud prevention",
+      "Compliance support"
     ],
-    process: [
-      "Platform and Store Planning",
-      "Theme & Plugin Development",
-      "Integration and Deployment",
-      "Performance Optimization and Support"
-    ],
-    technologies: [
-      "Shopify, WooCommerce",
-      "PHP, Liquid, HTML, CSS",
-      "REST / GraphQL APIs",
-      "SEO & Speed Optimization Tools"
-    ]
-  },
 
-  "oracle-consulting": {
-    title: "Oracle Development & Consulting",
-    overview:
-      "We provide Oracle consulting, implementation, migration and support services enabling enterprises to modernize data systems and streamline core operations using Oracle technologies.",
-    deliverables: [
-      "Oracle Database Implementation & Migration",
-      "Oracle Application Development",
-      "Performance Tuning and Security",
-      "Enterprise Support and Maintenance"
-    ],
     process: [
-      "Requirement Study and Strategy Definition",
-      "Application or Database Development",
-      "Optimization and Migration",
-      "Managed Support and Security Updates"
+      "Compliance analysis",
+      "System design",
+      "Development",
+      "Security testing"
     ],
+
     technologies: [
-      "Oracle Database, PL/SQL",
-      "Oracle APEX, E-Business Suite",
-      "Oracle Cloud Infrastructure (OCI)",
-      "Oracle Data Guard, GoldenGate"
+      "Stripe",
+      "Razorpay",
+      "PayPal",
+      "Blockchain APIs"
     ]
   }
-
 };

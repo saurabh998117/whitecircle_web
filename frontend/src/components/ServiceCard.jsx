@@ -1,8 +1,10 @@
-const ServiceCard = ({ title, shortDescription }) => (
-  <div className="card">
-    <h3 style={{ fontSize: 18, marginBottom: 6 }}>{title}</h3>
-    <p style={{ fontSize: 14, color: "#6b7280" }}>{shortDescription}</p>
-  </div>
-);
+import React from "react";
 
-export default ServiceCard;
+export default function ServiceCard({ title, text }) {
+  return (
+    <div className="service-card">
+      <h4>{title}</h4>
+      <p>{text}</p>
+    </div>
+  );
+}

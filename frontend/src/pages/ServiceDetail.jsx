@@ -1,111 +1,107 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { useParams, Link } from "react-router-dom";
-import axiosClient from "../api/axiosClient";
-import { servicesDetails } from "../data/servicesData";
+import { servicesData } from "../data/servicesData";
 
 const ServiceDetail = () => {
-  const { slug } = useParams();                         // e.g. "software-development"
-  const [service, setService] = useState(
-    servicesDetails[slug] || null
-  );
-  const [loading, setLoading] = useState(false);
+  const { slug } = useParams();
+  const service = servicesData[slug];
 
-  useEffect(() => {
-    // when slug changes, start fresh
-    setLoading(true);
-    setService(servicesDetails[slug] || null);
-
-    axiosClient
-      .get(`/services/${slug}`)
-      .then((res) => {
-        // merge API data into local details
-        setService((prev) => ({ ...(prev || {}), ...res.data }));
-      })
-      .catch(() => {
-        // if API fails, at least keep local data
-      })
-      .finally(() => setLoading(false));
-  }, [slug]);   // 👈 run again whenever slug changes
-
-  if (!service && loading) {
+  // If service not found
+  if (!service) {
     return (
-      <section className="section" style={{ paddingTop: 96 }}>
-        <div className="container">
-          <p>Loading service…</p>
-        </div>
-      </section>
-    );
-  }
-
-  if (!service && !loading) {
-    return (
-      <section className="section" style={{ paddingTop: 96 }}>
-        <div className="container">
-          <p>Service not found.</p>
-          <Link to="/services" style={{ color: "#1c45ff" }}>
-            Back to Services
-          </Link>
-        </div>
+      <section style={{ padding: "120px 20px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "28px", marginBottom: "10px" }}>
+          Service Not Found
+        </h2>
+        <Link to="/services" style={{ color: "#2563eb" }}>
+          ← Back to Services
+        </Link>
       </section>
     );
   }
 
   return (
-    <section className="section" style={{ paddingTop: 96 }}>
-      <div className="container">
-        <Link
-          to="/services"
-          style={{ fontSize: 13, display: "inline-block", marginBottom: 8 }}
-        >
-          ← Back to Services
-        </Link>
+    <>
+      {/* ===== BANNER ===== */}
+      <section
+        style={{
+          padding: "120px 20px 80px",
+          background: "linear-gradient(135deg, #0f172a, #1e3a8a)",
+          color: "#fff",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ fontSize: "42px", marginBottom: "10px" }}>
+          {service.bannerTitle}
+        </h1>
+        <p style={{ fontSize: "18px", opacity: 0.9 }}>
+          {service.bannerSubtitle}
+        </p>
+      </section>
 
-        <h1 className="section-title">{service.title}</h1>
-        {service.bannerDescription && (
-          <p className="section-subtitle">{service.bannerDescription}</p>
-        )}
+      {/* ===== CONTENT ===== */}
+      <section style={{ padding: "80px 20px", maxWidth: "1100px", margin: "auto" }}>
+        {/* Overview */}
+        <div style={{ marginBottom: "50px" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>
+            Service Overview
+          </h2>
+          <p style={{ color: "#555", lineHeight: "1.7" }}>
+            {service.overview}
+          </p>
+        </div>
 
-        {service.overview && (
-          <>
-            <h2>Overview</h2>
-            <p>{service.overview}</p>
-          </>
-        )}
+        {/* What We Deliver */}
+        <div style={{ marginBottom: "50px" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>
+            What We Deliver
+          </h2>
+          <ul style={{ paddingLeft: "20px", color: "#555" }}>
+            {service.deliverables.map((item, index) => (
+              <li key={index} style={{ marginBottom: "8px" }}>
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
 
-        {service.deliverables && (
-          <>
-            <h2>What We Deliver</h2>
-            <ul>
-              {service.deliverables.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </>
-        )}
+        {/* Process */}
+        <div style={{ marginBottom: "50px" }}>
+          <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>
+            Our Process
+          </h2>
+          <ol style={{ paddingLeft: "20px", color: "#555" }}>
+            {service.process.map((step, index) => (
+              <li key={index} style={{ marginBottom: "8px" }}>
+                {step}
+              </li>
+            ))}
+          </ol>
+        </div>
 
-        {service.process && (
-          <>
-            <h2>Process</h2>
-            <ol>
-              {service.process.map((step, i) => (
-                <li key={i}>{step}</li>
-              ))}
-            </ol>
-          </>
-        )}
-
-        {service.technologies && (
-          <>
-            <h2>Technologies Used</h2>
-            <ul>
-              {service.technologies.map((tech, i) => (
-                <li key={i}>{tech}</li>
-              ))}
-            </ul>
-          </>
-        )}
-      </div>
-    </section>
+        {/* Technologies */}
+        <div>
+          <h2 style={{ fontSize: "28px", marginBottom: "12px" }}>
+            Technologies Used
+          </h2>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {service.technologies.map((tech, index) => (
+              <span
+                key={index}
+                style={{
+                  padding: "8px 14px",
+                  background: "#f1f5f9",
+                  borderRadius: "20px",
+                  fontSize: "14px",
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 
