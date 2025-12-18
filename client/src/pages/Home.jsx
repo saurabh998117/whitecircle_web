@@ -65,7 +65,7 @@ export default function Home() {
             />
             <div className="portfolio-body">
               <h4>Enterprise Platform</h4>
-              <p>End-to-end SaaS solution.</p>
+              <p>End-to-end SaaS solution .</p>
             </div>
           </div>
 
